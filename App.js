@@ -39,6 +39,7 @@ export default class App extends Component<Props> {
                                                          source={require('./res/images/ic_polular.png')}/>}
                         badgeText="1"
                         onPress={() => this.setState({selectedTab: 'tab_popular'})}>
+
                         <View style={styles.page}></View>
 
                     </TabNavigator.Item>
@@ -51,7 +52,9 @@ export default class App extends Component<Props> {
                         renderSelectedIcon={() => <Image style={[styles.image, {tintColor: 'red'}]}
                                                          source={require('./res/images/ic_trending.png')}/>}
                         onPress={() => this.setState({selectedTab: 'tab_trending'})}>
+
                         <View style={styles.page1}></View>
+
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'tab_favorite'}
