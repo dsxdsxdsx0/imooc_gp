@@ -38,6 +38,7 @@ export default class App extends Component<Props> {
                   badgeText="1"
                   onPress={() => this.setState({ selectedTab: 'tab_popular' })}>
                   <View style={styles.page}></View>
+
               </TabNavigator.Item>
               <TabNavigator.Item
                   selected={this.state.selectedTab === 'tab_trending'}
