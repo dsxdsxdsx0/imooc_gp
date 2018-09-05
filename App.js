@@ -63,7 +63,7 @@ export default class App extends Component<Props> {
                         renderIcon={() => <Image style={styles.image}
                                                  source={require('./res/images/ic_favorite.png')}/>}
                         renderSelectedIcon={() => <Image style={[styles.image, {tintColor: 'red'}]}
-                                                         source={require('./res/images/ic_polular.png')}/>}
+                                                         source={require('./res/images/ic_favorite.png')}/>}
                         badgeText="1"
                         onPress={() => this.setState({selectedTab: 'tab_favorite'})}>
                         <View style={styles.page}></View>
@@ -74,7 +74,7 @@ export default class App extends Component<Props> {
                         selectedTitleStyle={{color: 'blue'}}
                         renderIcon={() => <Image style={styles.image} source={require('./res/images/ic_my.png')}/>}
                         renderSelectedIcon={() => <Image style={[styles.image, {tintColor: 'red'}]}
-                                                         source={require('./res/images/ic_trending.png')}/>}
+                                                         source={require('./res/images/ic_my.png')}/>}
                         onPress={() => this.setState({selectedTab: 'tab_my'})}>
                         <View style={styles.page1}></View>
                     </TabNavigator.Item>
